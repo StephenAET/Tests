@@ -9,22 +9,24 @@ package test1;
  *
  * @author Stephen
  */
-public class ScorePanel {
+public class Panel {
     
-    int score; 
+    
+    int firstRoll = 0;
+    int secondRoll = 0;
     int state;
     final int position;
     
     public static final int IS_STRIKE = 1;
     public static final int IS_SPARE = 2;
     public static final int IS_SCORE = 3;
+    public static final int IS_BONUS = 4;
+    
+    public static final int ALL_PINS = 10;
     
     
-    
-    public ScorePanel(int score, int position, int state){
-        this.score = score;
+    public Panel(int position){
         this.position = position;
-        this.state = state;
     }
     
 }
